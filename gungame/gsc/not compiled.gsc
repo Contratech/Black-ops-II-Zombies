@@ -218,7 +218,7 @@ score_monitor(){
 	level endon("end_game");
 
 	if(!isDefined(getDvar("points_for_next")) || getDvar("points_for_next") == "" || getDvar("points_for_next") == 0)
-		setDvar("points_for_next", 2000);
+		setDvar("points_for_next", 800);
 	points_needed = getDvarInt("points_for_next"); /*Points needed to reaach the next gun*/
 	isTheGameEnded = true;
 	
